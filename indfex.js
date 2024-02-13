@@ -1,31 +1,33 @@
 const text1 = document.querySelector(".text1");
 const text2 = document.querySelector(".text2");
 const btn = document.querySelector(".btn");
-// let min = 60;
-// let sec = 0;
-// const timerInterval = setInterval(() => {
+let min = 60;
+let sec = 0;
+
+const timerInterval = setInterval(() => {
     
 
-//     sec--;
-   
-//     if (sec < 0) {
-//       min--;
-//       sec = 59;
-//     }
-//     text1.textContent = `00 hor ${min}  min :${sec} sec`;
 
-//     if (min === 30 && sec === 0) {
-//       alert("ОСталось 30 хв")
-//     }
+    sec--;
+   
+    if (sec < 0) {
+      min--;
+      sec = 59;
+    }
+    text1.textContent = `00 hor ${min}  min :${sec} sec`;
+
+    if (min === 30 && sec === 0) {
+      alert("ОСталось 30 хв")
+    }
   
 
-//     if (min === 0 && sec === 0) {
-//       clearInterval(timerInterval);
-//       alert("час вишов")
-//     }
+    if (min === 0 && sec === 0) {
+      clearInterval(timerInterval);
+      alert("час вишов")
+    }
     
    
-//   }, 1000);
+  }, 1000);
 
 
 let secTwo = 15;

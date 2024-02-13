@@ -2,9 +2,12 @@
   "name": "plagins-hw2",
   "version": "1.0.0",
   "description": "",
-  "main": "indfex.js",
+  "main": "index.js",
+  "homepage": "https://stepanrychikhin2.github.io/plagins-hw2/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.html --public-url /plagins-hw2",
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
